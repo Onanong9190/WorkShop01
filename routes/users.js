@@ -180,37 +180,7 @@ router.get("/:id", async (req, res, next) => {
 });
 
 //* Update User By Id **
-// router.put("/:id", async (req, res, next) => {
-//   try {
-//     let id = req.params.id;
-//     let body = req.body;
 
-//     await usersModel.updateOne(
-//       { _id: id },
-//       {
-//         $set: {
-//           userId: body.userId,
-//           username: body.username,
-//           password: body.password,
-//           firstname: body.firstname,
-//           lastname: body.lastname,
-//         },
-//       }
-//     );
-
-//     let users = await usersModel.findById(id);
-
-//     return res.status(200).send({
-//       data: users,
-//       message: "Edit Data Success",
-//       success: true,
-//     });
-//   } catch (err) {
-//     res.status(err.status || 500).send({
-//       message: err.message,
-//     });
-//   }
-// });
 
 //! Delete User By Id **
 // router.delete("/:id", async (req, res, next) => {
